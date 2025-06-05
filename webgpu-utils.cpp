@@ -19,12 +19,6 @@ std::string_view toStdStringView(WGPUStringView wgpuStringView) {
 		? std::string_view(wgpuStringView.data)
 		: std::string_view(wgpuStringView.data, wgpuStringView.length);
 }
-WGPUStringView toWgpuStringView(std::string_view stdStringView) {
-	return { stdStringView.data(), stdStringView.size() };
-}
-WGPUStringView toWgpuStringView(const char* cString) {
-	return { cString, WGPU_STRLEN };
-}
 void sleepForMilliseconds(unsigned int milliseconds) {
 #ifdef __EMSCRIPTEN__
 	emscripten_sleep(milliseconds);

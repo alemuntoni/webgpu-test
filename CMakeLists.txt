@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 20)
 
 set(SOURCES
     webgpu-utils.cpp
+    webgpu-cpp-implementations.cpp
     main.cpp)
 
 set(HEADERS

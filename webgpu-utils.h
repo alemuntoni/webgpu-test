@@ -11,16 +11,6 @@
 std::string_view toStdStringView(WGPUStringView wgpuStringView);
 
 /**
- * Convert a C++ std::string_view into a WebGPU string view.
- */
-WGPUStringView toWgpuStringView(std::string_view stdStringView);
-
-/**
- * Convert a C string into a WebGPU string view
- */
-WGPUStringView toWgpuStringView(const char* cString);
-
-/**
  * Sleep for a given number of milliseconds.
  * This works with both native builds and emscripten, provided that -sASYNCIFY
  * compile option is provided when building with emscripten.
